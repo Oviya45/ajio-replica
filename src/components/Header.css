@@ -78,41 +78,38 @@
   color: #28a745; /* Change color on hover */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* Stack header content vertically on small screens */
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-left {
-    margin-bottom: 10px;
-  }
-
-  .header-nav {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-
-  .header-search {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .header-search input {
-    width: 75%; /* Make the input wider */
-  }
-}
-
 @media (max-width: 768px) {
   .header {
-    justify-content: space-between; /* Adjust for smaller screens */
+    flex-wrap: nowrap; /* Ensure all items remain in one row */
+    overflow-x: auto; /* Add horizontal scrolling for overflow */
   }
 
   .header .nav {
-    overflow-x: auto; /* Allow scrolling for overflowing links */
-    scrollbar-width: thin; /* Thin scrollbar for better aesthetics */
+    justify-content: flex-end; /* Push nav items to the right */
+    gap: 10px;
+  }
+
+  .header .icons {
+    flex-shrink: 0; /* Prevent icons from shrinking */
   }
 }
+
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 10px;
+  }
+
+  .header .logo {
+    font-size: 1.2rem;
+  }
+
+  .header .nav a {
+    font-size: 0.8rem; /* Smaller font for nav links */
+  }
+
+  .header .icons img, .header .icons i {
+    width: 20px;
+    height: 20px;
+  }
+}
+
