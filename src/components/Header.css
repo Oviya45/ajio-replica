@@ -106,22 +106,13 @@
   }
 }
 
-@media (max-width: 480px) {
-  /* For very small screens, adjust for mobile */
-  .header-left h1 {
-    font-size: 1.5rem;
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between; /* Adjust for smaller screens */
   }
 
-  .header-nav a {
-    font-size: 1rem;
-  }
-
-  .header-search input {
-    width: 70%;
-  }
-
-  .header-search .search-btn,
-  .header-search .icon-btn {
-    font-size: 1.2rem;
+  .header .nav {
+    overflow-x: auto; /* Allow scrolling for overflowing links */
+    scrollbar-width: thin; /* Thin scrollbar for better aesthetics */
   }
 }
