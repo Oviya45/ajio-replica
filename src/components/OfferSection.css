@@ -1,0 +1,189 @@
+/* Entire Section Styling */
+.offer-section {
+    background: linear-gradient(135deg, #f5b7b1, #f9e79f);/* Matching gradient background */
+    color: white;
+    padding: 30px 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+  }
+  
+  .offer-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  /* Offer Cards Container */
+  .offer-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual Offer Card */
+  .offer-card {
+    background: #fff;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+  }
+  
+  /* Card Specific Color Adjustments */
+  .offer-card:nth-child(1) {
+    background-color: #f5e2b3; /* First card background (matching the light yellowish color) */
+  }
+  
+  .offer-card:nth-child(2) {
+    background-color: #f7c0d5; /* Second card background (matching the pinkish color) */
+  }
+  
+  .offer-card:nth-child(3) {
+    background-color: #9d99a6; /* Third card background (matching the purple-ish color) */
+  }
+  
+  .offer-card:nth-child(4) {
+    background-color: #f5b84b; /* Fourth card background (matching the orange-ish color) */
+  }
+  
+  .offer-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c3b72;
+    margin-bottom: 8px;
+  }
+  
+  .offer-subtext {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .offer-code {
+    font-size: 16px;
+    color: #e73276;
+    font-weight: bold;
+  }
+  
+  .offer-code span {
+    display: inline-block;
+    background: #8c489f;
+    color: #0e0101;
+    padding: 6px 12px;
+    border-radius: 5px;
+  }
+  
+  /* App-Only Offers */
+  .app-offers {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .app-offer-card {
+    background: #d32f2f;
+    color: rgb(253, 250, 250);
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    width: 22%;
+    min-width: 140px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .delivery-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color:#0e0101
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #070600;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .offer-cards {
+      gap: 15px;
+    }
+  
+    .offer-card {
+      width: 28%;
+      padding: 15px;
+    }
+  
+    .app-offer-card {
+      width: 28%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .offer-section h2 {
+      font-size: 20px;
+    }
+  
+    .offer-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .offer-card {
+      width: 80%;
+    }
+  
+    .app-offers {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .app-offer-card {
+      width: 80%;
+    }
+  
+    .delivery-text,
+    .footer-text {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .offer-section h2 {
+      font-size: 18px;
+    }
+  
+    .offer-card {
+      width: 90%;
+      padding: 12px;
+    }
+  
+    .app-offer-card {
+      width: 90%;
+    }
+  
+    .delivery-text {
+      font-size: 14px;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+    }
+  }
+  

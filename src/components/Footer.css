@@ -1,0 +1,124 @@
+footer {
+    background-color: #1e2a38;
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  footer .banner {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  footer .banner-item {
+    text-align: center;
+    flex: 1;
+  }
+  
+  footer .banner-item img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  footer .links-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  footer .links-section .column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  footer .links-section .column:last-child {
+    margin-right: 0;
+  }
+  
+  footer .links-section h4 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  footer .links-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer .links-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  footer .payment-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer .payment-section p {
+    margin-bottom: 10px;
+  }
+  
+  footer .payment-section .payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  footer .payment-section .payment-icons img {
+    height: 30px;
+  }
+  
+  footer .payment-section .security {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  footer .payment-section .security img {
+    height: 25px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    footer .banner {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer .links-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    footer .links-section .column {
+      margin-bottom: 20px;
+    }
+  
+    footer .payment-section .payment-icons {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    footer .banner-item img {
+      height: 30px;
+    }
+  
+    footer .payment-section .payment-icons img {
+      height: 25px;
+    }
+  
+    footer .payment-section .security img {
+      height: 20px;
+    }
+  }
+  

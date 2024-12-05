@@ -1,0 +1,127 @@
+/* General Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the left section of the header */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .home-icon {
+  color: white;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.header-left .home-icon:hover {
+  color: #28a745; /* Change color on hover */
+}
+
+.header-left h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Navigation links styling */
+.header-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #28a745; /* Change color on hover */
+}
+
+/* Search input and icons section */
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-search input {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.header-search .search-btn,
+.header-search .icon-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-search .search-btn:hover,
+.header-search .icon-btn:hover {
+  color: #28a745; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Stack header content vertically on small screens */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header-search {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-search input {
+    width: 75%; /* Make the input wider */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens, adjust for mobile */
+  .header-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-nav a {
+    font-size: 1rem;
+  }
+
+  .header-search input {
+    width: 70%;
+  }
+
+  .header-search .search-btn,
+  .header-search .icon-btn {
+    font-size: 1.2rem;
+  }
+}
